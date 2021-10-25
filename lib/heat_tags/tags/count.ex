@@ -7,6 +7,7 @@ defmodule HeatTags.Tags.Count do
     # A função a seguir pode ser escritas das duas formas, sendo direta ou por cada elemento
     # |> Enum.reduce(%{}, &sum_values(&1, &2))
     |> Enum.reduce(%{}, fn elem, acc -> sum_values(elem, acc) end)
+    |> IO.inspect()
   end
 
   defp count_words(message) do
